@@ -54,5 +54,5 @@ artifacts {
 assemble.dependsOn packageNpmApp
 
 clean {
-    delete packageNpmApp.archivePath
+    delete packageNpmApp.archiveFile
 }
