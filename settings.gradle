@@ -1,4 +1,4 @@
-rootProject.name = 'java-npm-gradle-integration-example_groovy-dsl'
+rootProject.name = 'spring-boot-reactjs-single-jar'
 
 include 'java-app'
 include 'npm-app'
