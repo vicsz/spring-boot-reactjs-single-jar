@@ -7,6 +7,8 @@ SpringBoot (backend) and ReactJS (frontend) in single deployable jar file.
 
 Java work is done out of the *java-app* directory. 
 
+Note, the only build requirements are a Java JDK .. npm / node and gradle are all auto downloaded if needed. 
+
 # To run the backend and frontend locally: 
 
 ```sh
