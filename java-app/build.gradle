@@ -12,7 +12,7 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
 group = 'com.test'
-version = "1.0.${System.env.GITHUB_RUN_NUMBER ?: '0-SNAPSHOT'}" //Use GitHub Actions RUN_NUMBER if available
+version = "${System.env.GITHUB_RUN_NUMBER ?: '0-SNAPSHOT'}" //Use GitHub Actions RUN_NUMBER if available
 
 sourceCompatibility = 1.8
 
