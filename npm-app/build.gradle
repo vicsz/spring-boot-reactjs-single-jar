@@ -28,7 +28,7 @@ npm_run_build {
 // pack output of the build into JAR file
 task packageNpmApp(type: Zip) {
     dependsOn npm_run_build
-    extension 'jar'
+    archiveExtension = ('jar')
     destinationDirectory = file("${projectDir}/build_packageNpmApp")
     from('build') {
         // optional path under which output will be visible in Java classpath, e.g. static resources path
