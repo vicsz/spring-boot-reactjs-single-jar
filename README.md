@@ -1,5 +1,7 @@
 # Sample Single Jar Spring Boot ReactJS App
 
+Example combined single jar deployable demonstrating conccurrent front-end + back-end development workflow. 
+
 ![](https://github.com/vicsz/spring-boot-reactjs-single-jar/workflows/Build/badge.svg
 )
 
