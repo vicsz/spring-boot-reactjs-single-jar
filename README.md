@@ -11,7 +11,7 @@ Java work is done out of the *java-app* directory.
 
 Note, the only build requirements are a Java JDK .. npm / node and gradle are all auto downloaded if needed. 
 
-# To run the backend and frontend locally: 
+## To run the backend and frontend locally: 
 
 ```sh
 ./gradlew java-app:bootRun 
@@ -19,9 +19,18 @@ Note, the only build requirements are a Java JDK .. npm / node and gradle are al
 
 (default local address is localhost:8080)
 
-# For development of ReactJS work out of the *npm-app* directory
+## Frontend Development Workflow 
 
-Npm commands can be run traditionally (via npm directly) or via Gradle (i.e. gradle npm_start, gradle npm_run, etc)
+### Start the backend server (will be on localhost:8080)
+```sh
+./gradlew -a java-app:bootRun 
+```
+*Note the "-a" which skips building project dependencies .. in our case, the npm sub component.*
 
-Out of the *npm-app* directory, the default local address is localhost:3000.
+### Start the frontend server from the npm-app directory (will be on localhost:3000)
 
+```sh
+npm run start
+```
+
+*Note the proxy reference in the package.json that causes api calls to route to port 8080, and skip CORS checks*
